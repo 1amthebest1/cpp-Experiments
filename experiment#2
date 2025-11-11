@@ -1,0 +1,13 @@
+---
+#include <iostream>
+using namespace std;
+int main() {
+    int x; 
+    cout << x;
+  }
+---
+
+//OUTPUT
+0 -> --- Compiled by https://www.programiz.com/cpp-programming/online-compiler on 11/11/2025
+32764 - 32767 ---Compiled by https://www.onlinegdb.com/online_c++_compiler on 11/11/2025 
+C4700 ---Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34810 for x86 
