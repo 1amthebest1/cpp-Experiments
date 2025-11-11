@@ -29,3 +29,16 @@ Stack memory initialization in debug mode
 
 -> This is intentional to help detect bugs like using uninitialized variables or accessing freed memory.
 
+----
+
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[3] = { 1 };
+    cout << arr[4];
+}
+//OUTPUT 
+//- 858993460
+
+----
+
