@@ -3,11 +3,9 @@ using namespace std;
 int main() {
     int x = 4;
     int* p = &x;
-    cout << p;
-    cout << endl;
+    cout << p << endl;
     p++;
-    cout << p;
-    cout << endl;
+    cout << p << endl;
     cout << *p;
 }
 
