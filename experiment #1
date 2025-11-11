@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int x = 4;
+    int* p = &x;
+    cout << p;
+    cout << endl;
+    p++;
+    cout << p;
+    cout << endl;
+    cout << *p;
+}
+
+//output
+
+//000000E80D13FD24
+//000000E80D13FD28
+//- 858993460
+
+//000000C8E190FCF4
+//000000C8E190FCF8
+//- 858993460
+
+----
+Stack memory initialization in debug mode
+----
+
+-> Many compilers (MSVC, for example) fill uninitialized stack memory with a fixed pattern when running in debug mode.
+
+-> On Windows, the pattern 0xCCCCCCCC (or -858993460 in decimal) is commonly used.
+
+-> This is intentional to help detect bugs like using uninitialized variables or accessing freed memory.
+
